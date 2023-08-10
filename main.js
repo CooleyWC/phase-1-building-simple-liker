@@ -19,6 +19,10 @@ document.addEventListener('click', function(event){
       errorModal.classList.remove('hidden');
       const errorMessage = document.querySelector('#modal-message');
       errorMessage.innerText = error;
+
+      setTimeout(function(){
+        errorModal.classList.remove('hidden');
+      }, 3000);
     });
   } else if(event.target.innerText = FULL_HEART){
     event.target.innerText = EMPTY_HEART;
